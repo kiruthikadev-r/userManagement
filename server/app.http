@@ -1,0 +1,49 @@
+POST http://localhost:3303/signup/
+Content-Type: application/json
+
+{
+    "name":"kumar",
+    "email":"kumar2003@gmail.com",
+    "password":"kumar",
+    "phone":54321
+}
+
+###
+POST http://localhost:3303/login/ 
+Content-Type: application/json
+
+
+{
+    "email":"kumar2003@gmail.com",
+    "password":"kumar"
+}
+
+###
+POST http://localhost:3303/add-users/ 
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTkxNTEwZGM4ZTEyNWJmMTBjYTVjYjAiLCJpYXQiOjE3MDQzMDI0OTUsImV4cCI6MTcwNDMwNjA5NX0.tTJxV-7t8WbqURyfqRSIsY0Bks0Jcr8XPf9la65C5kY
+
+{
+    "name":"kiruthika",
+    "email":"kiruthika@gmail.com",
+    "phone":"100"
+}
+
+###
+GET http://localhost:3303/users/ 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTkxNTEwZGM4ZTEyNWJmMTBjYTVjYjAiLCJpYXQiOjE3MDQyMTA0MjEsImV4cCI6MTcwNDIxNDAyMX0.3Bwua9gTJy8KJMb_ytemA68yUN0cPg1B4aewPGF3FZE
+
+###
+POST http://localhost:3303/signup 
+Content-Type: application/json
+
+{
+    "name":"jeevan",
+     "email":"jeevankumar2003@gmail.com",
+     "phone":634234,
+     "gender":"male",
+     "aboutCompany":"linkedIn",
+     "city":"paris",
+     "state":"london",
+     "password":"jeevkumar" 
+}
